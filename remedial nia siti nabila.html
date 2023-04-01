@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class perangkat_elektronik{
+            merek;
+            tipe;
+            harga
+        }
+        class radio extends perangkat_elektronik{
+            merek; "xiomi"
+            tipe; "kotak"
+            harga; "3jt"
+            
+            hidup(){
+                return"perangkat elektronik hidup"
+            }
+            mati(){
+                return"perangkat elektronik mati"
+            }
+        }
+        var key = new radio()
+        key.merek="xiomi"
+        key.tipe="kotak"
+        key.harga="3jt"
+
+
+        document.write(key.hidup()+ '<br/>')
+        document.write(key.mati()+ '<br/>')
+        document.write(key.merek()+ '<br/>')
+        document.write(key.tipe()+ '<br/>')
+        document.write(key.harga()+ '<br/>')
+    </script>
+</body>
+</html>
